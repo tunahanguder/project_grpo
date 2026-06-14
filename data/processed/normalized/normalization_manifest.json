@@ -1,0 +1,111 @@
+{
+  "description": "Normalized multiple-choice datasets for GRPO MCQ project.",
+  "format": {
+    "id": "unique normalized id",
+    "source": "openbookqa or arc",
+    "subset": "main, ARC-Easy, ARC-Challenge",
+    "split": "train, validation, test",
+    "question": "question text",
+    "choices": {
+      "A": "choice text",
+      "B": "choice text",
+      "C": "choice text",
+      "D": "choice text"
+    },
+    "answer": "A/B/C/D",
+    "original_id": "id from original dataset",
+    "original_answer_key": "answer key from original dataset"
+  },
+  "files": [
+    {
+      "dataset": "openbookqa",
+      "subset": "main",
+      "split": "train",
+      "input_file": "data\\raw\\openbookqa\\main\\train.jsonl",
+      "output_file": "data\\processed\\normalized\\openbookqa_train.jsonl",
+      "raw_count": 4957,
+      "normalized_count": 4954,
+      "skipped_count": 3
+    },
+    {
+      "dataset": "openbookqa",
+      "subset": "main",
+      "split": "validation",
+      "input_file": "data\\raw\\openbookqa\\main\\validation.jsonl",
+      "output_file": "data\\processed\\normalized\\openbookqa_validation.jsonl",
+      "raw_count": 500,
+      "normalized_count": 500,
+      "skipped_count": 0
+    },
+    {
+      "dataset": "openbookqa",
+      "subset": "main",
+      "split": "test",
+      "input_file": "data\\raw\\openbookqa\\main\\test.jsonl",
+      "output_file": "data\\processed\\normalized\\openbookqa_test.jsonl",
+      "raw_count": 500,
+      "normalized_count": 500,
+      "skipped_count": 0
+    },
+    {
+      "dataset": "arc",
+      "subset": "ARC-Easy",
+      "split": "train",
+      "input_file": "data\\raw\\arc\\ARC-Easy\\train.jsonl",
+      "output_file": "data\\processed\\normalized\\arc_arc_easy_train.jsonl",
+      "raw_count": 2251,
+      "normalized_count": 2241,
+      "skipped_count": 10
+    },
+    {
+      "dataset": "arc",
+      "subset": "ARC-Easy",
+      "split": "validation",
+      "input_file": "data\\raw\\arc\\ARC-Easy\\validation.jsonl",
+      "output_file": "data\\processed\\normalized\\arc_arc_easy_validation.jsonl",
+      "raw_count": 570,
+      "normalized_count": 567,
+      "skipped_count": 3
+    },
+    {
+      "dataset": "arc",
+      "subset": "ARC-Easy",
+      "split": "test",
+      "input_file": "data\\raw\\arc\\ARC-Easy\\test.jsonl",
+      "output_file": "data\\processed\\normalized\\arc_arc_easy_test.jsonl",
+      "raw_count": 2376,
+      "normalized_count": 2365,
+      "skipped_count": 11
+    },
+    {
+      "dataset": "arc",
+      "subset": "ARC-Challenge",
+      "split": "train",
+      "input_file": "data\\raw\\arc\\ARC-Challenge\\train.jsonl",
+      "output_file": "data\\processed\\normalized\\arc_arc_challenge_train.jsonl",
+      "raw_count": 1119,
+      "normalized_count": 1117,
+      "skipped_count": 2
+    },
+    {
+      "dataset": "arc",
+      "subset": "ARC-Challenge",
+      "split": "validation",
+      "input_file": "data\\raw\\arc\\ARC-Challenge\\validation.jsonl",
+      "output_file": "data\\processed\\normalized\\arc_arc_challenge_validation.jsonl",
+      "raw_count": 299,
+      "normalized_count": 295,
+      "skipped_count": 4
+    },
+    {
+      "dataset": "arc",
+      "subset": "ARC-Challenge",
+      "split": "test",
+      "input_file": "data\\raw\\arc\\ARC-Challenge\\test.jsonl",
+      "output_file": "data\\processed\\normalized\\arc_arc_challenge_test.jsonl",
+      "raw_count": 1172,
+      "normalized_count": 1165,
+      "skipped_count": 7
+    }
+  ]
+}

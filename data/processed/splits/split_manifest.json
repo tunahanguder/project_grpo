@@ -1,0 +1,48 @@
+{
+  "description": "Dataset splits for GRPO multiple-choice QA project.",
+  "seed": 42,
+  "rules": {
+    "openbookqa_test_usage": "final evaluation only; never used for training",
+    "openbookqa_train_split": {
+      "sft_train_size": 3000,
+      "grpo_train_size": 1000,
+      "remaining": "unused_train"
+    },
+    "arc_usage": {
+      "train": "used for SFT train pool",
+      "validation": "used for SFT dev pool",
+      "test": "not used in this stage"
+    }
+  },
+  "openbookqa": {
+    "openbookqa_train_total": 4954,
+    "openbookqa_sft_train": 3000,
+    "openbookqa_grpo_train": 1000,
+    "openbookqa_unused_train": 954,
+    "openbookqa_dev": 500,
+    "openbookqa_test": 500,
+    "files": {
+      "openbookqa_sft_train": "data\\processed\\splits\\openbookqa_sft_train.jsonl",
+      "openbookqa_grpo_train_1000": "data\\processed\\splits\\openbookqa_grpo_train_1000.jsonl",
+      "openbookqa_unused_train": "data\\processed\\splits\\openbookqa_unused_train.jsonl",
+      "openbookqa_dev": "data\\processed\\splits\\openbookqa_dev.jsonl",
+      "openbookqa_test_500": "data\\processed\\splits\\openbookqa_test_500.jsonl"
+    }
+  },
+  "arc": {
+    "arc_sft_train": 3358,
+    "arc_dev": 862,
+    "files": {
+      "arc_sft_train": "data\\processed\\splits\\arc_sft_train.jsonl",
+      "arc_dev": "data\\processed\\splits\\arc_dev.jsonl"
+    }
+  },
+  "sft_pool": {
+    "sft_train_pool": 6358,
+    "sft_dev_pool": 1362,
+    "files": {
+      "sft_train_pool": "data\\processed\\splits\\sft_train_pool.jsonl",
+      "sft_dev_pool": "data\\processed\\splits\\sft_dev_pool.jsonl"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "input_count": 6359,
+  "final_sft_count": 6345,
+  "invalid_count": 14,
+  "invalid_reason_counts": {
+    "teacher_output_invalid": 14
+  },
+  "output_file": "/content/drive/MyDrive/project_grpo/data/processed/final/sft_train.jsonl",
+  "invalid_file": "/content/drive/MyDrive/project_grpo/data/processed/final/sft_invalid.jsonl"
+}
