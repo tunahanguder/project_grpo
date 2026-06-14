@@ -1,0 +1,11 @@
+torch
+transformers
+accelerate
+datasets
+trl
+peft
+bitsandbytes
+tensorboard
+tqdm
+huggingface_hub
+autoawq
