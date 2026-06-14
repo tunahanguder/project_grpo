@@ -1,0 +1,86 @@
+{
+  "description": "Raw dataset files for GRPO multiple-choice QA project.",
+  "datasets": [
+    {
+      "dataset": "openbookqa",
+      "subset": "main",
+      "splits": [
+        {
+          "dataset": "openbookqa",
+          "subset": "main",
+          "split": "train",
+          "num_rows": 4957,
+          "file": "data\\raw\\openbookqa\\main\\train.jsonl"
+        },
+        {
+          "dataset": "openbookqa",
+          "subset": "main",
+          "split": "validation",
+          "num_rows": 500,
+          "file": "data\\raw\\openbookqa\\main\\validation.jsonl"
+        },
+        {
+          "dataset": "openbookqa",
+          "subset": "main",
+          "split": "test",
+          "num_rows": 500,
+          "file": "data\\raw\\openbookqa\\main\\test.jsonl"
+        }
+      ]
+    },
+    {
+      "dataset": "arc",
+      "subset": "ARC-Easy",
+      "splits": [
+        {
+          "dataset": "arc",
+          "subset": "ARC-Easy",
+          "split": "train",
+          "num_rows": 2251,
+          "file": "data\\raw\\arc\\ARC-Easy\\train.jsonl"
+        },
+        {
+          "dataset": "arc",
+          "subset": "ARC-Easy",
+          "split": "test",
+          "num_rows": 2376,
+          "file": "data\\raw\\arc\\ARC-Easy\\test.jsonl"
+        },
+        {
+          "dataset": "arc",
+          "subset": "ARC-Easy",
+          "split": "validation",
+          "num_rows": 570,
+          "file": "data\\raw\\arc\\ARC-Easy\\validation.jsonl"
+        }
+      ]
+    },
+    {
+      "dataset": "arc",
+      "subset": "ARC-Challenge",
+      "splits": [
+        {
+          "dataset": "arc",
+          "subset": "ARC-Challenge",
+          "split": "train",
+          "num_rows": 1119,
+          "file": "data\\raw\\arc\\ARC-Challenge\\train.jsonl"
+        },
+        {
+          "dataset": "arc",
+          "subset": "ARC-Challenge",
+          "split": "test",
+          "num_rows": 1172,
+          "file": "data\\raw\\arc\\ARC-Challenge\\test.jsonl"
+        },
+        {
+          "dataset": "arc",
+          "subset": "ARC-Challenge",
+          "split": "validation",
+          "num_rows": 299,
+          "file": "data\\raw\\arc\\ARC-Challenge\\validation.jsonl"
+        }
+      ]
+    }
+  ]
+}
